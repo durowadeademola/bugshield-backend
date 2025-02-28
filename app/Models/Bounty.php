@@ -22,9 +22,9 @@ class Bounty extends Model {
         return $this->belongsTo(User::class, 'organization_id'); 
     }
 
-    // public function transactions() {
-    //     return $this->hasMany(Transaction::class);
-    // }
+    public function transactions() {
+        return $this->hasMany(Transaction::class);
+    }
 }
 
 
